@@ -7,11 +7,11 @@
 </head>
 
 <body>
-  <div  ng-controller="fullName">
+  <div ng-controller="fullName">
     <p>{{Student.FName}}</p>
   </div>
   <script type="text/javascript">
-    angular.module('app1',[]).controller('fullName', fullName);
+    angular.module('app1', []).controller('fullName', fullName);
     function fullName($scope) {
       $scope.Student =
       {
