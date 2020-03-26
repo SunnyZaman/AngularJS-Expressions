@@ -3,8 +3,8 @@
 <html>
 <head>
   	<title> AngularJS Hello World! </title>
-                <script src="angular.js"></script>
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
  
 <body>
 
@@ -15,7 +15,7 @@
     }]);
 </script>
 
-<div ng-controller="cnt3">
+<div ng-app="TemplateExample" ng-controller="cnt3">
  <label>Line1: <input type="text" ng-model="l1"></label><br>
  <label>Line2: <input type="text" ng-model="l2"></label><br>
  <p ng-bind-template="{{l1}} {{l2}}!"></p>
@@ -25,9 +25,11 @@
 </html>
 
 
+<!-- 
 ---------------------------------------------
 Output: 
 Line1:  Hello (in a box)
 Line2:  World (in a box)
 
-Hello World!
+Hello World! 
+-->
